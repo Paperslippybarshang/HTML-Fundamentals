@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo!</h1>
+    <form action="">
+        <!-- attributes for input tag: placeholder, value, minlength, maxlength, required-->
+        <!-- <input type="text" name="city" placeholder="Enter a City"> -->
+        <!-- <input type="text" name="city" placeholder="Enter a City" minlength="2"> -->
+        <input 
+            type="text" 
+            name="city" 
+            placeholder="Enter a City" 
+            minlength="2"
+            maxlength="10"
+            required
+        >
+    </form>
+    <button>Buy</button>
+    <h2>Register</h2>
+    <form action="">
+        <input type="email" placeholder="Email" name="email"> 
+        <input type="password" placeholder="Password" name="new-passphrase">
+        <input type="checkbox" name="tos-agree"> I agree to the terms of service
+        <p>Select Shirt Size</p>
+        <input type="radio" name="shirt-size" value="xs"> XS <br>
+        <input type="radio" name="shirt-size" value="s"> S <br>
+        <input type="radio" name="shirt-size" value="m"> M <br>
+        <input type="radio" name="shirt-size" value="l"> L <br>
+        <button type="submit">Submit Form</button>
+        <!-- <input type="submit" value="Yeah"> -->
+    </form>
+
+    <h2>Other Input Types</h2>
+    <form action="">
+        Pick a Color: <input type="color" name="color-picker" id="">
+        Enter Your Birthday: <input type="date" name="birthday" id="">
+        How Satisfied Are You With Our Product?: <input type="range" name="happiness" min="1" max="10" step="2">
+
+        <select name="state">
+            <option value="">--Please Choose an Option--</option>
+            <option value="MI">Michigan</option>
+            <option value="IL">Illinois</option>
+            <option value="GA">Georgia</option>
+            <option value="NY">New York</option>
+        </select>
+        <br>
+        Please Leave Your Comment Below:
+        <textarea name="comment" id="" cols="30" rows="10" minlength="5" maxlength="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illum possimus accusamus doloremque eius animi eaque, esse placeat dolore dolores quos repudiandae amet consectetur praesentium alias nam tenetur. Maiores, sit.</textarea>
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+</html>

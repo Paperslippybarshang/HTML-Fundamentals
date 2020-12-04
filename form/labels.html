@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels Demo</title>
+</head>
+<body>
+    <h1>Label</h1>
+    <h2>Register</h2>
+    <form action="">
+        <!-- Label using for & id -->
+        <label for="email">Enter Email</label>
+        <input type="email" placeholder="Email" name="email" id="email"> 
+        <br>
+        <!-- Label using nest ing-->
+        <label>
+            Enter Password
+            <input type="password" placeholder="Password" name="new-passphrase">
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="tos-agree">
+            I agree to the terms of service
+        </label>
+        
+        <p>Select Shirt Size</p>
+        <label>
+            <input type="radio" name="shirt-size" value="xs">
+            XS
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="shirt-size" value="s">
+            S
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="shirt-size" value="m">
+            M
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="shirt-size" value="l">
+            L
+        </label>
+        <br>
+        <button type="submit">Submit Form</button>
+        <!-- <input type="submit" value="Yeah"> -->
+    </form>
+    <form method="post" enctype="multipart/form-data">
+        <label for="file-submission">
+            This won't actually work, but go ahead and pick a file!
+        </label>
+        <input type="file" name="my-file" id="file-submission">
+        <button type="submit">Upload Files</button>
+    </form>
+</body>
+</html>
